@@ -44,7 +44,7 @@ const Hero = () => {
                           />
 
                           <div className={style.author}>
-                              <div className={style.name}>JAKE</div>
+                              <div className={style.name}>Gators</div>
                               <a 
                               className='text-[#1868b7]'
                               href="https://lh3.googleusercontent.com/lc4XyEUsP_wS5KrHCtTNxVSJmWaZwtknyUVzuHRMQ2r260S_VBLm3gcQD7XcAXL1Yh5DSDIRaIk6KyQiwBBJW2o0nc1ZKBQMdWnG=w300">
