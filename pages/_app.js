@@ -1,6 +1,10 @@
 import '../styles/globals.css'
-import {Thirdweb3Provider} from '@3rdweb/hooks'
+import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
 
+/**
+ * The chain ID 4 represents the Rinkeby network
+ * The `injected` connector is a web3 connection method used by Metamask
+ */
 const supportedChainIds = [4]
 const connectors = {
   injected: {},
@@ -8,13 +12,12 @@ const connectors = {
 
 function MyApp({ Component, pageProps }) {
   return (
-  <Thirdweb3Provider
-  supportedChainIds={supportedChainIds}
-  connectors={connectors}
-  >
- <Component {...pageProps} />
-  
-  </Thirdweb3Provider>
+    <ThirdwebWeb3Provider
+      supportedChainIds={supportedChainIds}
+      connectors={connectors}
+    >
+      <Component {...pageProps} />
+    </ThirdwebWeb3Provider>
   )
 }
 
